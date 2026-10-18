@@ -1,0 +1,167 @@
+/* Splash */
+"splash.subtitle" = "Your shared shopping list";
+
+/* PIN Setup */
+"pin.setup.subtitle" = "Create your access code";
+"pin.length.digits" = "digits";
+"pin.create.title" = "Create code";
+"pin.create.subtitle" = "Enter %d digits";
+"pin.confirm.title" = "Confirm code";
+"pin.confirm.subtitle" = "Repeat the code to confirm";
+"pin.biometric.enableTitle" = "Enable %@?";
+"pin.biometric.createdTitle" = "Code created!";
+"pin.biometric.enableSubtitle" = "Sign in with %@ instead of the code";
+"pin.biometric.createdSubtitle" = "You can now sign in with your code";
+"pin.biometric.enableButton" = "Enable %@";
+"pin.biometric.notNow" = "Not now";
+"pin.biometric.enter" = "Enter";
+
+/* PIN Unlock */
+"pin.waiting" = "Waiting for %@…";
+"pin.retry" = "Try again";
+"pin.useCode" = "Use code";
+"pin.useBiometric" = "Use %@";
+"pin.error.wrong" = "Incorrect code. Try again.";
+"pin.forgot" = "Forgot your code?";
+"pin.reset.confirm.title" = "Forgot your code?";
+"pin.reset.confirm.message" = "You'll be signed out and the lock turned off. Just sign in again with your account: your lists are not deleted.";
+"pin.reset.confirm.action" = "Sign out";
+
+/* Home */
+"home.empty.title" = "Empty list";
+"home.empty.subtitle" = "Tap + to add the first item";
+"home.section.tobuy" = "To buy";
+"home.section.incart" = "In cart";
+"home.all" = "All";
+"home.syncFailed" = "No connection — changes may not have synced";
+
+/* Add Item */
+"item.new" = "New item";
+"item.product" = "Product";
+"item.product.placeholder" = "Product name";
+"item.category" = "Category";
+"item.quantity" = "Quantity (optional)";
+"item.quantity.placeholder" = "E.g. 2";
+"item.unit" = "Unit";
+"item.add" = "Add";
+"item.delete" = "Delete";
+
+/* Catalog */
+"catalog.title" = "Catalog";
+"catalog.search" = "Search products…";
+"catalog.close" = "Close";
+"catalog.selectedCount" = "%d in list";
+"catalog.noResults" = "No results for \"%@\"";
+"catalog.addToList" = "Add to list";
+
+/* Actions */
+"action.cancel" = "Cancel";
+
+/* Categories */
+"cat.carnePeixe" = "Meat & Fish";
+"cat.vegetaisFruta" = "Vegetables & Fruit";
+"cat.laticinios" = "Dairy";
+"cat.padaria" = "Bakery";
+"cat.conservasSecos" = "Canned & Dry Goods";
+"cat.limpeza" = "Cleaning";
+"cat.higiene" = "Hygiene";
+"cat.bebidas" = "Drinks";
+"cat.snacks" = "Snacks";
+"cat.congelados" = "Frozen";
+"cat.bebeCrianca" = "Baby & Kids";
+"cat.animais" = "Pets";
+"cat.casa" = "Home";
+"cat.outros" = "Other";
+
+/* Settings */
+"settings.title" = "Settings";
+"settings.appearance" = "Appearance";
+"settings.theme" = "Theme";
+"settings.theme.system" = "System";
+"settings.theme.light" = "Light";
+"settings.theme.dark" = "Dark";
+"settings.language" = "Language";
+
+/* Login */
+"login.subtitle" = "The shopping list you share with the people you live with";
+"login.google" = "Continue with Google";
+"login.email" = "Continue with email";
+"login.legal" = "By continuing, you accept the privacy policy.";
+"login.email.title" = "Email";
+"login.email.signIn" = "Sign in";
+"login.email.signUp" = "Create account";
+"login.email.address" = "Email";
+"login.email.password" = "Password";
+"login.email.passwordHint" = "At least 8 characters.";
+"login.email.forgot" = "Forgot password";
+"login.email.resetSent" = "We sent you an email to choose a new password.";
+"login.email.checkInbox" = "Confirm your email: we sent you a link to activate your account.";
+"login.email.newPassword" = "New password";
+"login.email.passwordUpdated" = "Password updated.";
+
+/* Onboarding */
+"onboarding.name.title" = "What's your name?";
+"onboarding.name.subtitle" = "This is the name people you share the list with will see.";
+"onboarding.name.placeholder" = "Your name";
+"onboarding.list.title" = "Your list";
+"onboarding.list.subtitle" = "Create a new list or join someone's with an invite code.";
+"onboarding.list.create" = "Create a list";
+"onboarding.list.namePlaceholder" = "E.g. Home";
+"onboarding.list.createButton" = "Create";
+"onboarding.or" = "or";
+"onboarding.list.join" = "Join a list";
+"onboarding.list.codePlaceholder" = "8-character code";
+"onboarding.list.joinButton" = "Join";
+
+/* Invites */
+"invite.loginFirst" = "Sign in to join the shared list.";
+"invite.joined" = "You joined \"%@\".";
+"invite.shareMessage" = "Join my list \"%@\" on iList. Open the link or use the code %@.";
+
+/* Lock */
+"pin.setup.title" = "App lock";
+"pin.biometric.reason" = "Unlock iList";
+
+/* Settings: list */
+"settings.list" = "List";
+"settings.list.active" = "Active list";
+"settings.list.members" = "Members";
+"settings.list.you" = "(you)";
+"settings.list.owner" = "Owner";
+"settings.list.inviteHint" = "Invite someone to share this list:";
+"settings.list.invite" = "Invite";
+"settings.list.newCode" = "Generate new code";
+"settings.list.new" = "New list";
+"settings.list.join" = "Join another list";
+"settings.list.leave" = "Leave list";
+"settings.list.leaveAction" = "Leave";
+"settings.list.leave.message" = "You'll stop seeing this list. Other members keep it.";
+"settings.list.leave.lastMessage" = "You're the only member: the list and its items will be deleted.";
+"settings.list.removeMember" = "Remove member?";
+"settings.list.removeAction" = "Remove";
+"settings.list.removeMessage" = "%@ will no longer see this list.";
+
+/* Settings: account */
+"settings.rename.title" = "Your name";
+"settings.rename.hint" = "Tap to change your name";
+"settings.security" = "Security";
+"settings.lock" = "Lock app with a code";
+"settings.account" = "Account";
+"settings.privacy" = "Privacy policy";
+"settings.signOut" = "Sign out";
+"settings.delete.title" = "Delete account";
+"settings.delete.action" = "Delete";
+"settings.delete.message" = "Your account is deleted permanently. You leave all lists; lists where you're the only member are deleted.";
+
+/* Actions */
+"action.save" = "Save";
+"action.continue" = "Continue";
+
+/* Errors */
+"error.generic" = "Something went wrong. Please try again.";
+"error.offline" = "No internet connection.";
+"error.invalidCode" = "Invalid invite code.";
+"error.wrongCredentials" = "Wrong email or password.";
+"error.alreadyRegistered" = "An account with this email already exists.";
+"error.emailNotConfirmed" = "Please confirm your email first.";
+"error.weakPassword" = "Password is too weak.";

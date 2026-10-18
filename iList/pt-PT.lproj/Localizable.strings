@@ -1,0 +1,167 @@
+/* Splash */
+"splash.subtitle" = "A vossa lista de compras";
+
+/* PIN Setup */
+"pin.setup.subtitle" = "Cria o teu código de acesso";
+"pin.length.digits" = "dígitos";
+"pin.create.title" = "Criar código";
+"pin.create.subtitle" = "Introduz %d dígitos";
+"pin.confirm.title" = "Confirmar código";
+"pin.confirm.subtitle" = "Repete o código para confirmar";
+"pin.biometric.enableTitle" = "Ativar %@?";
+"pin.biometric.createdTitle" = "Código criado!";
+"pin.biometric.enableSubtitle" = "Entra com %@ em vez do código";
+"pin.biometric.createdSubtitle" = "Já podes entrar com o teu código";
+"pin.biometric.enableButton" = "Ativar %@";
+"pin.biometric.notNow" = "Agora não";
+"pin.biometric.enter" = "Entrar";
+
+/* PIN Unlock */
+"pin.waiting" = "A aguardar %@…";
+"pin.retry" = "Tentar novamente";
+"pin.useCode" = "Usar código";
+"pin.useBiometric" = "Usar %@";
+"pin.error.wrong" = "Código incorreto. Tenta novamente.";
+"pin.forgot" = "Esqueci-me do código";
+"pin.reset.confirm.title" = "Esqueceste-te do código?";
+"pin.reset.confirm.message" = "Terminas a sessão e o bloqueio é desligado. Depois é só entrares de novo com a tua conta: as listas não são apagadas.";
+"pin.reset.confirm.action" = "Terminar sessão";
+
+/* Home */
+"home.empty.title" = "Lista vazia";
+"home.empty.subtitle" = "Toca em + para adicionar o primeiro item";
+"home.section.tobuy" = "Por comprar";
+"home.section.incart" = "No carrinho";
+"home.all" = "Tudo";
+"home.syncFailed" = "Sem ligação — as alterações podem não ter sido sincronizadas";
+
+/* Add Item */
+"item.new" = "Novo item";
+"item.product" = "Produto";
+"item.product.placeholder" = "Nome do produto";
+"item.category" = "Categoria";
+"item.quantity" = "Quantidade (opcional)";
+"item.quantity.placeholder" = "Ex: 2";
+"item.unit" = "Unidade";
+"item.add" = "Adicionar";
+"item.delete" = "Apagar";
+
+/* Catalog */
+"catalog.title" = "Catálogo";
+"catalog.search" = "Pesquisar produto…";
+"catalog.close" = "Fechar";
+"catalog.selectedCount" = "%d na lista";
+"catalog.noResults" = "Sem resultados para \"%@\"";
+"catalog.addToList" = "Adicionar à lista";
+
+/* Actions */
+"action.cancel" = "Cancelar";
+
+/* Categories */
+"cat.carnePeixe" = "Carne & Peixe";
+"cat.vegetaisFruta" = "Vegetais & Fruta";
+"cat.laticinios" = "Laticínios";
+"cat.padaria" = "Padaria";
+"cat.conservasSecos" = "Conservas & Secos";
+"cat.limpeza" = "Limpeza";
+"cat.higiene" = "Higiene";
+"cat.bebidas" = "Bebidas";
+"cat.snacks" = "Snacks";
+"cat.congelados" = "Congelados";
+"cat.bebeCrianca" = "Bebé & Criança";
+"cat.animais" = "Animais";
+"cat.casa" = "Casa";
+"cat.outros" = "Outros";
+
+/* Settings */
+"settings.title" = "Definições";
+"settings.appearance" = "Aparência";
+"settings.theme" = "Tema";
+"settings.theme.system" = "Sistema";
+"settings.theme.light" = "Claro";
+"settings.theme.dark" = "Escuro";
+"settings.language" = "Idioma";
+
+/* Login */
+"login.subtitle" = "A lista de compras partilhada com quem vive contigo";
+"login.google" = "Continuar com Google";
+"login.email" = "Continuar com email";
+"login.legal" = "Ao continuar, aceitas a política de privacidade.";
+"login.email.title" = "Email";
+"login.email.signIn" = "Entrar";
+"login.email.signUp" = "Criar conta";
+"login.email.address" = "Email";
+"login.email.password" = "Password";
+"login.email.passwordHint" = "Mínimo 8 caracteres.";
+"login.email.forgot" = "Esqueci-me da password";
+"login.email.resetSent" = "Enviámos-te um email para escolheres uma password nova.";
+"login.email.checkInbox" = "Confirma o teu email: enviámos-te um link para ativar a conta.";
+"login.email.newPassword" = "Nova password";
+"login.email.passwordUpdated" = "Password atualizada.";
+
+/* Onboarding */
+"onboarding.name.title" = "Como te chamas?";
+"onboarding.name.subtitle" = "É o nome que as pessoas com quem partilhas a lista vão ver.";
+"onboarding.name.placeholder" = "O teu nome";
+"onboarding.list.title" = "A tua lista";
+"onboarding.list.subtitle" = "Cria uma lista nova ou entra na de alguém com o código de convite.";
+"onboarding.list.create" = "Criar lista";
+"onboarding.list.namePlaceholder" = "Ex: Casa";
+"onboarding.list.createButton" = "Criar";
+"onboarding.or" = "ou";
+"onboarding.list.join" = "Entrar numa lista";
+"onboarding.list.codePlaceholder" = "Código de 8 caracteres";
+"onboarding.list.joinButton" = "Entrar";
+
+/* Convites */
+"invite.loginFirst" = "Inicia sessão para entrares na lista partilhada.";
+"invite.joined" = "Entraste na lista \"%@\".";
+"invite.shareMessage" = "Junta-te à minha lista \"%@\" no iList. Abre o link ou usa o código %@.";
+
+/* Bloqueio */
+"pin.setup.title" = "Bloqueio da app";
+"pin.biometric.reason" = "Desbloquear o iList";
+
+/* Definições: lista */
+"settings.list" = "Lista";
+"settings.list.active" = "Lista ativa";
+"settings.list.members" = "Membros";
+"settings.list.you" = "(tu)";
+"settings.list.owner" = "Dono";
+"settings.list.inviteHint" = "Convida alguém a partilhar esta lista:";
+"settings.list.invite" = "Convidar";
+"settings.list.newCode" = "Gerar código novo";
+"settings.list.new" = "Nova lista";
+"settings.list.join" = "Entrar noutra lista";
+"settings.list.leave" = "Sair da lista";
+"settings.list.leaveAction" = "Sair";
+"settings.list.leave.message" = "Deixas de ver esta lista. Os outros membros mantêm-na.";
+"settings.list.leave.lastMessage" = "És o único membro: a lista e os itens vão ser apagados.";
+"settings.list.removeMember" = "Remover membro?";
+"settings.list.removeAction" = "Remover";
+"settings.list.removeMessage" = "%@ deixa de ver esta lista.";
+
+/* Definições: conta */
+"settings.rename.title" = "O teu nome";
+"settings.rename.hint" = "Toca para mudar o nome";
+"settings.security" = "Segurança";
+"settings.lock" = "Bloquear app com código";
+"settings.account" = "Conta";
+"settings.privacy" = "Política de privacidade";
+"settings.signOut" = "Terminar sessão";
+"settings.delete.title" = "Apagar conta";
+"settings.delete.action" = "Apagar";
+"settings.delete.message" = "A tua conta é apagada para sempre. Sais de todas as listas; as listas em que és o único membro são apagadas.";
+
+/* Ações */
+"action.save" = "Guardar";
+"action.continue" = "Continuar";
+
+/* Erros */
+"error.generic" = "Algo correu mal. Tenta novamente.";
+"error.offline" = "Sem ligação à internet.";
+"error.invalidCode" = "Código de convite inválido.";
+"error.wrongCredentials" = "Email ou password errados.";
+"error.alreadyRegistered" = "Já existe uma conta com este email.";
+"error.emailNotConfirmed" = "Confirma primeiro o teu email.";
+"error.weakPassword" = "Password demasiado fraca.";

@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA100001000000000000001 /* iListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200001000000000000001 /* iListApp.swift */; };
+		AA100002000000000000001 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200002000000000000001 /* SplashView.swift */; };
+		AA100004000000000000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200004000000000000001 /* HomeView.swift */; };
+		AA100005000000000000001 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200005000000000000001 /* AddItemView.swift */; };
+		AA100006000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200006000000000000001 /* SettingsView.swift */; };
+		AA100008000000000000001 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200008000000000000001 /* ShoppingItem.swift */; };
+		AA100009000000000000001 /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200009000000000000001 /* Household.swift */; };
+		AA100010000000000000001 /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200010000000000000001 /* SupabaseService.swift */; };
+		AA100011000000000000001 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200011000000000000001 /* SessionViewModel.swift */; };
+		AA100012000000000000001 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200012000000000000001 /* ListViewModel.swift */; };
+		AA100013000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA200013000000000000001 /* Assets.xcassets */; };
+		AA100014000000000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA200014000000000000001 /* Preview Assets.xcassets */; };
+		AA100015000000000000001 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = CC100001000000000000001 /* Supabase */; };
+		AA100016000000000000001 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200016000000000000001 /* LoginView.swift */; };
+		AA100036000000000000001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA200036000000000000001 /* PrivacyInfo.xcprivacy */; };
+		BB0007000000000000000000 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BB0017000000000000000000 /* PrivacyInfo.xcprivacy */; };
+		AA100017000000000000001 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA200017000000000000001 /* Localizable.strings */; };
+		AA100018000000000000001 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200020000000000000001 /* KeychainService.swift */; };
+		AA100019000000000000001 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200021000000000000001 /* BiometricService.swift */; };
+		AA100022000000000000001 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200022000000000000001 /* CatalogView.swift */; };
+		AA100023000000000000001 /* CatalogData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200023000000000000001 /* CatalogData.swift */; };
+		AA100024000000000000001 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200024000000000000001 /* AppConfig.swift */; };
+		AA100025000000000000001 /* PINSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200025000000000000001 /* PINSetupView.swift */; };
+		AA100026000000000000001 /* AppLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200026000000000000001 /* AppLockView.swift */; };
+		AA100027000000000000001 /* PINComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200027000000000000001 /* PINComponents.swift */; };
+		AA100028000000000000001 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200028000000000000001 /* WidgetSnapshot.swift */; };
+		BB0001000000000000000000 /* iListWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0011000000000000000000 /* iListWidgetBundle.swift */; };
+		BB0002000000000000000000 /* iListWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0012000000000000000000 /* iListWidget.swift */; };
+		BB0003000000000000000000 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200028000000000000001 /* WidgetSnapshot.swift */; };
+		BB0004000000000000000000 /* iListWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB0016000000000000000000 /* iListWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB0005000000000000000000 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200024000000000000001 /* AppConfig.swift */; };
+		AA100031000000000000001 /* AuthHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200031000000000000001 /* AuthHelpers.swift */; };
+		AA100032000000000000001 /* EmailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200032000000000000001 /* EmailAuthView.swift */; };
+		AA100033000000000000001 /* OnboardingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200033000000000000001 /* OnboardingViews.swift */; };
+		AA100034000000000000001 /* ListSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200034000000000000001 /* ListSettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA200001000000000000001 /* iListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iListApp.swift; sourceTree = "<group>"; };
+		AA200002000000000000001 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AA200004000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AA200005000000000000001 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		AA200006000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA200008000000000000001 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		AA200009000000000000001 /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
+		AA200010000000000000001 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
+		AA200011000000000000001 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		AA200012000000000000001 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		AA200013000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA200014000000000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA200016000000000000001 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AA200018000000000000001 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AA200019000000000000001 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		AA200020000000000000001 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		AA200021000000000000001 /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
+		AA200022000000000000001 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		AA200023000000000000001 /* CatalogData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogData.swift; sourceTree = "<group>"; };
+		AA200024000000000000001 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		AA200025000000000000001 /* PINSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINSetupView.swift; sourceTree = "<group>"; };
+		AA200026000000000000001 /* AppLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLockView.swift; sourceTree = "<group>"; };
+		AA200027000000000000001 /* PINComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINComponents.swift; sourceTree = "<group>"; };
+		AA200099000000000000001 /* iList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA200028000000000000001 /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
+		BB0011000000000000000000 /* iListWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iListWidgetBundle.swift; sourceTree = "<group>"; };
+		BB0012000000000000000000 /* iListWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iListWidget.swift; sourceTree = "<group>"; };
+		BB0013000000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0014000000000000000000 /* iListWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iListWidget.entitlements; sourceTree = "<group>"; };
+		BB0015000000000000000000 /* iList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iList.entitlements; sourceTree = "<group>"; };
+		BB0016000000000000000000 /* iListWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iListWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA200031000000000000001 /* AuthHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelpers.swift; sourceTree = "<group>"; };
+		AA200032000000000000001 /* EmailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthView.swift; sourceTree = "<group>"; };
+		AA200033000000000000001 /* OnboardingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViews.swift; sourceTree = "<group>"; };
+		AA200034000000000000001 /* ListSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettingsView.swift; sourceTree = "<group>"; };
+		AA200035000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA200036000000000000001 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BB0017000000000000000000 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA300001000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA100015000000000000001 /* Supabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0061000000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB0051000000000000000000 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB0004000000000000000000 /* iListWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA400000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA400001000000000000001 /* iList */,
+				BB0021000000000000000000 /* iListWidget */,
+				AA400099000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA400001000000000000001 /* iList */ = {
+			isa = PBXGroup;
+			children = (
+				AA200001000000000000001 /* iListApp.swift */,
+				AA400010000000000000001 /* Views */,
+				AA400020000000000000001 /* ViewModels */,
+				AA400030000000000000001 /* Models */,
+				AA400040000000000000001 /* Services */,
+				AA200013000000000000001 /* Assets.xcassets */,
+				AA200017000000000000001 /* Localizable.strings */,
+				BB0015000000000000000000 /* iList.entitlements */,
+				AA200035000000000000001 /* Info.plist */,
+				AA200036000000000000001 /* PrivacyInfo.xcprivacy */,
+				AA400050000000000000001 /* Preview Content */,
+			);
+			path = iList;
+			sourceTree = "<group>";
+		};
+		BB0021000000000000000000 /* iListWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BB0011000000000000000000 /* iListWidgetBundle.swift */,
+				BB0012000000000000000000 /* iListWidget.swift */,
+				BB0013000000000000000000 /* Info.plist */,
+				BB0014000000000000000000 /* iListWidget.entitlements */,
+				BB0017000000000000000000 /* PrivacyInfo.xcprivacy */,
+			);
+			path = iListWidget;
+			sourceTree = "<group>";
+		};
+		AA400010000000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA200034000000000000001 /* ListSettingsView.swift */,
+				AA200033000000000000001 /* OnboardingViews.swift */,
+				AA200032000000000000001 /* EmailAuthView.swift */,
+				AA200002000000000000001 /* SplashView.swift */,
+				AA200016000000000000001 /* LoginView.swift */,
+				AA200025000000000000001 /* PINSetupView.swift */,
+				AA200026000000000000001 /* AppLockView.swift */,
+				AA200027000000000000001 /* PINComponents.swift */,
+				AA200004000000000000001 /* HomeView.swift */,
+				AA200005000000000000001 /* AddItemView.swift */,
+				AA200006000000000000001 /* SettingsView.swift */,
+				AA200022000000000000001 /* CatalogView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA400020000000000000001 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA200011000000000000001 /* SessionViewModel.swift */,
+				AA200012000000000000001 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA400030000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA200008000000000000001 /* ShoppingItem.swift */,
+				AA200009000000000000001 /* Household.swift */,
+				AA200023000000000000001 /* CatalogData.swift */,
+				AA200024000000000000001 /* AppConfig.swift */,
+				AA200028000000000000001 /* WidgetSnapshot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA400040000000000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA200031000000000000001 /* AuthHelpers.swift */,
+				AA200010000000000000001 /* SupabaseService.swift */,
+				AA200020000000000000001 /* KeychainService.swift */,
+				AA200021000000000000001 /* BiometricService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA400050000000000000001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA200014000000000000001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA400099000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA200099000000000000001 /* iList.app */,
+				BB0016000000000000000000 /* iListWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA500001000000000000001 /* iList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA600002000000000000001 /* Build configuration list for PBXNativeTarget "iList" */;
+			buildPhases = (
+				AA300002000000000000001 /* Sources */,
+				AA300001000000000000001 /* Frameworks */,
+				AA300003000000000000001 /* Resources */,
+				BB0051000000000000000000 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0042000000000000000000 /* PBXTargetDependency */,
+			);
+			name = iList;
+			packageProductDependencies = (
+				CC100001000000000000001 /* Supabase */,
+			);
+			productName = iList;
+			productReference = AA200099000000000000001 /* iList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB0031000000000000000000 /* iListWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0073000000000000000000 /* Build configuration list for PBXNativeTarget "iListWidgetExtension" */;
+			buildPhases = (
+				BB0063000000000000000000 /* Sources */,
+				BB0061000000000000000000 /* Frameworks */,
+				BB0062000000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iListWidgetExtension;
+			productName = iListWidgetExtension;
+			productReference = BB0016000000000000000000 /* iListWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0041000000000000000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA000001000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0031000000000000000000;
+			remoteInfo = iListWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXProject section */
+		AA000001000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					AA500001000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BB0031000000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA600001000000000000001 /* Build configuration list for PBXProject "iList" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "pt-PT";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				"pt-PT",
+				en,
+				Base,
+			);
+			mainGroup = AA400000000000000000001;
+			packageReferences = (
+				CC000001000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = AA400099000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA500001000000000000001 /* iList */,
+				BB0031000000000000000000 /* iListWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA300003000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA100014000000000000001 /* Preview Assets.xcassets in Resources */,
+				AA100013000000000000001 /* Assets.xcassets in Resources */,
+				AA100017000000000000001 /* Localizable.strings in Resources */,
+				AA100036000000000000001 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0062000000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0007000000000000000000 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA300002000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA100034000000000000001 /* ListSettingsView.swift in Sources */,
+				AA100033000000000000001 /* OnboardingViews.swift in Sources */,
+				AA100032000000000000001 /* EmailAuthView.swift in Sources */,
+				AA100031000000000000001 /* AuthHelpers.swift in Sources */,
+				AA100001000000000000001 /* iListApp.swift in Sources */,
+				AA100002000000000000001 /* SplashView.swift in Sources */,
+				AA100004000000000000001 /* HomeView.swift in Sources */,
+				AA100005000000000000001 /* AddItemView.swift in Sources */,
+				AA100006000000000000001 /* SettingsView.swift in Sources */,
+				AA100008000000000000001 /* ShoppingItem.swift in Sources */,
+				AA100009000000000000001 /* Household.swift in Sources */,
+				AA100010000000000000001 /* SupabaseService.swift in Sources */,
+				AA100011000000000000001 /* SessionViewModel.swift in Sources */,
+				AA100012000000000000001 /* ListViewModel.swift in Sources */,
+				AA100016000000000000001 /* LoginView.swift in Sources */,
+				AA100018000000000000001 /* KeychainService.swift in Sources */,
+				AA100019000000000000001 /* BiometricService.swift in Sources */,
+				AA100022000000000000001 /* CatalogView.swift in Sources */,
+				AA100023000000000000001 /* CatalogData.swift in Sources */,
+				AA100024000000000000001 /* AppConfig.swift in Sources */,
+				AA100025000000000000001 /* PINSetupView.swift in Sources */,
+				AA100026000000000000001 /* AppLockView.swift in Sources */,
+				AA100027000000000000001 /* PINComponents.swift in Sources */,
+				AA100028000000000000001 /* WidgetSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0063000000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0001000000000000000000 /* iListWidgetBundle.swift in Sources */,
+				BB0002000000000000000000 /* iListWidget.swift in Sources */,
+				BB0003000000000000000000 /* WidgetSnapshot.swift in Sources */,
+				BB0005000000000000000000 /* AppConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0042000000000000000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0031000000000000000000 /* iListWidgetExtension */;
+			targetProxy = BB0041000000000000000000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA200017000000000000001 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA200018000000000000001 /* en */,
+				AA200019000000000000001 /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA700001000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S769436W24;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA700002000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S769436W24;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA700003000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iList/iList.entitlements;
+				INFOPLIST_FILE = iList/Info.plist;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Usa o Face ID para entrares na tua conta de forma rápida e segura.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidarsenio.iList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA700004000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iList/iList.entitlements;
+				INFOPLIST_FILE = iList/Info.plist;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Usa o Face ID para entrares na tua conta de forma rápida e segura.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidarsenio.iList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB0071000000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iListWidget/iListWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S769436W24;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iListWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iList;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidarsenio.iList.iListWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB0072000000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iListWidget/iListWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S769436W24;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = iListWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iList;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidarsenio.iList.iListWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA600001000000000000001 /* Build configuration list for PBXProject "iList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA700001000000000000001 /* Debug */,
+				AA700002000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA600002000000000000001 /* Build configuration list for PBXNativeTarget "iList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA700003000000000000001 /* Debug */,
+				AA700004000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB0073000000000000000000 /* Build configuration list for PBXNativeTarget "iListWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0071000000000000000000 /* Debug */,
+				BB0072000000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC000001000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC100001000000000000001 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC000001000000000000001 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA000001000000000000001 /* Project object */;
+}
