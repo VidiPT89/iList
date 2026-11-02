@@ -165,3 +165,50 @@
 "error.alreadyRegistered" = "Já existe uma conta com este email.";
 "error.emailNotConfirmed" = "Confirma primeiro o teu email.";
 "error.weakPassword" = "Password demasiado fraca.";
+
+/* Lojas (percurso pelos corredores) */
+"stores.title" = "Lojas";
+"stores.pick" = "Loja";
+"stores.none" = "Sem loja (por data)";
+"stores.manage" = "Gerir lojas…";
+"stores.add" = "Adicionar loja";
+"stores.new" = "Nova loja";
+"stores.edit" = "Editar loja";
+"stores.name" = "Nome";
+"stores.name.placeholder" = "Ex: Continente de Cascais";
+"stores.route" = "Percurso pelos corredores";
+"stores.route.hint" = "Arrasta as categorias pela ordem em que passas por elas nesta loja. Ao escolheres a loja, a lista segue este percurso.";
+"stores.footer" = "Cada loja guarda a ordem dos corredores e é partilhada com toda a lista.";
+
+/* Terminar compra */
+"trip.title" = "Terminar compra";
+"trip.finish" = "Terminar";
+"trip.cartCount" = "%d artigos no carrinho";
+"trip.hint" = "Os artigos no carrinho saem da lista e ficam no histórico da casa.";
+"trip.store" = "Loja";
+"trip.store.none" = "Sem loja";
+"trip.total" = "Valor da compra";
+"trip.total.placeholder" = "Ex: 23,45";
+"trip.total.hint" = "Opcional. Com o valor, a app divide a despesa pela casa.";
+"trip.total.invalid" = "Valor inválido.";
+"trip.paidBy" = "Quem pagou";
+"trip.items" = "%d artigos";
+"trip.paidByName" = "pago por %@";
+"trip.settled" = "acertada";
+
+/* Despesas */
+"expenses.title" = "Despesas";
+"expenses.month" = "Gasto este mês";
+"expenses.balance" = "Acerto de contas";
+"expenses.balance.hint" = "As compras em aberto são divididas em partes iguais pelos membros da lista.";
+"expenses.even" = "Contas certas";
+"expenses.owes" = "%@ deve a %@";
+"expenses.settle" = "Marcar como acertado";
+"expenses.settle.action" = "Acertar";
+"expenses.settle.message" = "Todas as compras em aberto passam a acertadas e o saldo volta a zero.";
+"expenses.trips" = "Compras";
+"expenses.empty" = "Ainda não terminaste nenhuma compra.";
+
+/* Reposição */
+"restock.title" = "Deve estar a acabar";
+"restock.every" = "costuma ser a cada %d dias";

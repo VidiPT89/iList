@@ -110,11 +110,6 @@ class ListViewModel: ObservableObject {
         } catch {}
     }
 
-    func clearChecked() async {
-        let checked = items.filter { $0.isChecked }
-        for item in checked { await deleteItem(item) }
-    }
-
     /// Escreve os itens por comprar no App Group e pede à WidgetKit para atualizar o widget.
     private func syncWidget() {
         let unchecked = items.filter { !$0.isChecked }

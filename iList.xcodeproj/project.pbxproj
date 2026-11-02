@@ -14,9 +14,11 @@
 		AA100006000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200006000000000000001 /* SettingsView.swift */; };
 		AA100008000000000000001 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200008000000000000001 /* ShoppingItem.swift */; };
 		AA100009000000000000001 /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200009000000000000001 /* Household.swift */; };
+		AA100040000000000000001 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200040000000000000001 /* Shop.swift */; };
 		AA100010000000000000001 /* SupabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200010000000000000001 /* SupabaseService.swift */; };
 		AA100011000000000000001 /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200011000000000000001 /* SessionViewModel.swift */; };
 		AA100012000000000000001 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200012000000000000001 /* ListViewModel.swift */; };
+		AA100041000000000000001 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200041000000000000001 /* ShopViewModel.swift */; };
 		AA100013000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA200013000000000000001 /* Assets.xcassets */; };
 		AA100014000000000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA200014000000000000001 /* Preview Assets.xcassets */; };
 		AA100015000000000000001 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = CC100001000000000000001 /* Supabase */; };
@@ -42,6 +44,8 @@
 		AA100032000000000000001 /* EmailAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200032000000000000001 /* EmailAuthView.swift */; };
 		AA100033000000000000001 /* OnboardingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200033000000000000001 /* OnboardingViews.swift */; };
 		AA100034000000000000001 /* ListSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200034000000000000001 /* ListSettingsView.swift */; };
+		AA100043000000000000001 /* StoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200043000000000000001 /* StoresView.swift */; };
+		AA100042000000000000001 /* ShopViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA200042000000000000001 /* ShopViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,9 +56,11 @@
 		AA200006000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AA200008000000000000001 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		AA200009000000000000001 /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
+		AA200040000000000000001 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		AA200010000000000000001 /* SupabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseService.swift; sourceTree = "<group>"; };
 		AA200011000000000000001 /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
 		AA200012000000000000001 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		AA200041000000000000001 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		AA200013000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA200014000000000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AA200016000000000000001 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -80,6 +86,8 @@
 		AA200032000000000000001 /* EmailAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAuthView.swift; sourceTree = "<group>"; };
 		AA200033000000000000001 /* OnboardingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViews.swift; sourceTree = "<group>"; };
 		AA200034000000000000001 /* ListSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSettingsView.swift; sourceTree = "<group>"; };
+		AA200043000000000000001 /* StoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresView.swift; sourceTree = "<group>"; };
+		AA200042000000000000001 /* ShopViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViews.swift; sourceTree = "<group>"; };
 		AA200035000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA200036000000000000001 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BB0017000000000000000000 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -161,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				AA200034000000000000001 /* ListSettingsView.swift */,
+				AA200043000000000000001 /* StoresView.swift */,
+				AA200042000000000000001 /* ShopViews.swift */,
 				AA200033000000000000001 /* OnboardingViews.swift */,
 				AA200032000000000000001 /* EmailAuthView.swift */,
 				AA200002000000000000001 /* SplashView.swift */,
@@ -181,6 +191,7 @@
 			children = (
 				AA200011000000000000001 /* SessionViewModel.swift */,
 				AA200012000000000000001 /* ListViewModel.swift */,
+				AA200041000000000000001 /* ShopViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,6 +201,7 @@
 			children = (
 				AA200008000000000000001 /* ShoppingItem.swift */,
 				AA200009000000000000001 /* Household.swift */,
+				AA200040000000000000001 /* Shop.swift */,
 				AA200023000000000000001 /* CatalogData.swift */,
 				AA200024000000000000001 /* AppConfig.swift */,
 				AA200028000000000000001 /* WidgetSnapshot.swift */,
@@ -346,6 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA100034000000000000001 /* ListSettingsView.swift in Sources */,
+				AA100043000000000000001 /* StoresView.swift in Sources */,
+				AA100042000000000000001 /* ShopViews.swift in Sources */,
 				AA100033000000000000001 /* OnboardingViews.swift in Sources */,
 				AA100032000000000000001 /* EmailAuthView.swift in Sources */,
 				AA100031000000000000001 /* AuthHelpers.swift in Sources */,
@@ -356,9 +370,11 @@
 				AA100006000000000000001 /* SettingsView.swift in Sources */,
 				AA100008000000000000001 /* ShoppingItem.swift in Sources */,
 				AA100009000000000000001 /* Household.swift in Sources */,
+				AA100040000000000000001 /* Shop.swift in Sources */,
 				AA100010000000000000001 /* SupabaseService.swift in Sources */,
 				AA100011000000000000001 /* SessionViewModel.swift in Sources */,
 				AA100012000000000000001 /* ListViewModel.swift in Sources */,
+				AA100041000000000000001 /* ShopViewModel.swift in Sources */,
 				AA100016000000000000001 /* LoginView.swift in Sources */,
 				AA100018000000000000001 /* KeychainService.swift in Sources */,
 				AA100019000000000000001 /* BiometricService.swift in Sources */,
@@ -536,7 +552,7 @@
 				CODE_SIGN_ENTITLEMENTS = iList/iList.entitlements;
 				INFOPLIST_FILE = iList/Info.plist;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -573,7 +589,7 @@
 				CODE_SIGN_ENTITLEMENTS = iList/iList.entitlements;
 				INFOPLIST_FILE = iList/Info.plist;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
@@ -608,7 +624,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iListWidget/iListWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = S769436W24;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iListWidget/Info.plist;
@@ -637,7 +653,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iListWidget/iListWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = S769436W24;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = iListWidget/Info.plist;

@@ -165,3 +165,50 @@
 "error.alreadyRegistered" = "An account with this email already exists.";
 "error.emailNotConfirmed" = "Please confirm your email first.";
 "error.weakPassword" = "Password is too weak.";
+
+/* Stores (aisle route) */
+"stores.title" = "Stores";
+"stores.pick" = "Store";
+"stores.none" = "No store (by date)";
+"stores.manage" = "Manage stores…";
+"stores.add" = "Add store";
+"stores.new" = "New store";
+"stores.edit" = "Edit store";
+"stores.name" = "Name";
+"stores.name.placeholder" = "E.g. Tesco Express";
+"stores.route" = "Route through the aisles";
+"stores.route.hint" = "Drag the categories into the order you walk past them in this store. When you pick the store, the list follows this route.";
+"stores.footer" = "Each store keeps its aisle order and is shared with everyone on the list.";
+
+/* Finish shopping */
+"trip.title" = "Finish shopping";
+"trip.finish" = "Finish";
+"trip.cartCount" = "%d items in the cart";
+"trip.hint" = "Items in the cart leave the list and go into the household history.";
+"trip.store" = "Store";
+"trip.store.none" = "No store";
+"trip.total" = "Amount spent";
+"trip.total.placeholder" = "E.g. 23.45";
+"trip.total.hint" = "Optional. With the amount, the app splits the cost across the household.";
+"trip.total.invalid" = "Invalid amount.";
+"trip.paidBy" = "Paid by";
+"trip.items" = "%d items";
+"trip.paidByName" = "paid by %@";
+"trip.settled" = "settled";
+
+/* Expenses */
+"expenses.title" = "Expenses";
+"expenses.month" = "Spent this month";
+"expenses.balance" = "Settle up";
+"expenses.balance.hint" = "Open shopping trips are split equally between the list members.";
+"expenses.even" = "All square";
+"expenses.owes" = "%@ owes %@";
+"expenses.settle" = "Mark as settled";
+"expenses.settle.action" = "Settle";
+"expenses.settle.message" = "All open shopping trips are marked as settled and the balance goes back to zero.";
+"expenses.trips" = "Shopping trips";
+"expenses.empty" = "You haven't finished any shopping trip yet.";
+
+/* Restock */
+"restock.title" = "Probably running low";
+"restock.every" = "usually every %d days";

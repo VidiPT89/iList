@@ -10,6 +10,10 @@
 - ✅ Accounts with Sign in with Apple, Google or email, plus in-app account deletion
 - ✅ Invite people to a list with a code or a link; owners can remove members or renew the code
 - ✅ Several lists per account (home, holidays, office…)
+- ✅ Store routes: save your supermarkets with their aisle order and the list follows your path through the store
+- ✅ Finish shopping: the cart becomes household history, with the store, the amount and who paid
+- ✅ Restock suggestions learned from what the household buys and how often
+- ✅ Settle up: shopping costs split between list members, with who owes whom
 - ✅ Home screen widget with what's left to buy
 - ✅ Optional app lock with a PIN code or Face ID / Touch ID
 - ✅ Quick-add catalog with 700+ pre-loaded everyday products across 14 categories
@@ -49,7 +53,7 @@ Select the `iList` scheme and run on a simulator or device.
 
 **Using your own Supabase project**
 
-1. Create a project at [supabase.com](https://supabase.com) and run, in the SQL Editor, `supabase_setup.sql` followed by `supabase/migrations/002_accounts_and_sharing.sql`.
+1. Create a project at [supabase.com](https://supabase.com) and run, in the SQL Editor, `supabase_setup.sql`, then `supabase/migrations/002_accounts_and_sharing.sql`, `supabase/migrations/004_stores_trips_restock.sql` and `supabase/migrations/005_keep_alive.sql` (a `keep_alive()` function an external scheduler can call so the free-tier project isn't paused).
 2. Enable the Email, Apple and (optionally) Google providers, and add `ilist://login-callback` to the Redirect URLs.
 3. Replace the project URL and publishable key in `iList/Services/SupabaseService.swift`.
 

@@ -4,7 +4,11 @@ struct HomeView: View {
     @EnvironmentObject var session: SessionViewModel
     let household: Household
     @StateObject private var listVM = ListViewModel()
+    @StateObject private var shopVM = ShopViewModel()
     @State private var showCatalog = false
+    @State private var showFinishTrip = false
+    @State private var showExpenses = false
+    @State private var showStores = false
     @State private var showAddItem = false
     @State private var showSettings = false
     @State private var selectedCategory: ItemCategory?
@@ -18,6 +22,20 @@ struct HomeView: View {
     private var unchecked: [ShoppingItem] { allItems.filter { !$0.isChecked } }
     private var checked:   [ShoppingItem] { allItems.filter  {  $0.isChecked } }
     private var hasChecked: Bool { listVM.items.contains { $0.isChecked } }
+
+    /// Com uma loja escolhida, os artigos por comprar seguem a ordem dos corredores.
+    private var aisleSections: [(category: ItemCategory, items: [ShoppingItem])] {
+        guard let store = shopVM.selectedStore else { return [] }
+        return store.orderedCategories.compactMap { cat in
+            let items = unchecked.filter { $0.category == cat }
+            return items.isEmpty ? nil : (cat, items)
+        }
+    }
+
+    private var restockSuggestions: [RestockSuggestion] {
+        guard selectedCategory == nil else { return [] }
+        return Restock.suggestions(from: shopVM.purchases, excluding: listVM.items)
+    }
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
@@ -36,6 +54,7 @@ struct HomeView: View {
                     ProgressView("A carregar…")
                     Spacer()
                 } else if listVM.items.isEmpty {
+                    restockStrip
                     emptyState
                 } else {
                     itemList
@@ -53,9 +72,26 @@ struct HomeView: View {
         .sheet(isPresented: $showSettings) {
             SettingsView().environmentObject(session)
         }
+        .sheet(isPresented: $showFinishTrip) {
+            FinishTripView(shopVM: shopVM, listVM: listVM, accentColor: accent).environmentObject(session)
+        }
+        .sheet(isPresented: $showExpenses) {
+            ExpensesView(shopVM: shopVM, accentColor: accent).environmentObject(session)
+        }
+        .sheet(isPresented: $showStores) {
+            StoresView(shopVM: shopVM, accentColor: accent)
+        }
+        .alert(Text(verbatim: shopVM.errorMessage ?? ""), isPresented: Binding(
+            get: { shopVM.errorMessage != nil },
+            set: { if !$0 { shopVM.errorMessage = nil } }
+        )) {
+            Button("OK", role: .cancel) {}
+        }
         .task(id: household.id) {
             selectedCategory = nil
-            await listVM.load(householdId: household.id)
+            async let items: Void = listVM.load(householdId: household.id)
+            async let shop: Void = shopVM.load(householdId: household.id)
+            _ = await (items, shop)
         }
     }
 
@@ -65,21 +101,30 @@ struct HomeView: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text("iList")
                     .font(.system(size: 34, weight: .bold, design: .rounded))
-                householdSwitcher
+                HStack(spacing: 10) {
+                    householdSwitcher
+                    storeSwitcher
+                }
             }
 
             Spacer()
 
             HStack(spacing: 16) {
                 if hasChecked {
-                    Button {
-                        Task { await listVM.clearChecked() }
-                    } label: {
-                        Image(systemName: "trash")
+                    Button { showFinishTrip = true } label: {
+                        Image(systemName: "cart.badge.checkmark")
                             .font(.system(size: 17, weight: .medium))
-                            .foregroundStyle(.red)
+                            .foregroundStyle(accent)
                     }
+                    .accessibilityLabel(Text("trip.title"))
                 }
+
+                Button { showExpenses = true } label: {
+                    Image(systemName: "eurosign.circle")
+                        .font(.system(size: 19, weight: .medium))
+                        .foregroundStyle(.secondary)
+                }
+                .accessibilityLabel(Text("expenses.title"))
 
                 Button { showSettings = true } label: {
                     avatarView(name: session.displayName, color: accent, size: 38)
@@ -116,6 +161,61 @@ struct HomeView: View {
             Text(household.name)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+        }
+    }
+
+    /// Loja ativa: ordena a lista pelo percurso dos corredores.
+    var storeSwitcher: some View {
+        Menu {
+            Button {
+                shopVM.selectedStoreId = nil
+            } label: {
+                if shopVM.selectedStoreId == nil {
+                    Label("stores.none", systemImage: "checkmark")
+                } else {
+                    Text("stores.none")
+                }
+            }
+            ForEach(shopVM.stores) { store in
+                Button {
+                    shopVM.selectedStoreId = store.id
+                } label: {
+                    if store.id == shopVM.selectedStoreId {
+                        Label(store.name, systemImage: "checkmark")
+                    } else {
+                        Text(store.name)
+                    }
+                }
+            }
+            Divider()
+            Button { showStores = true } label: {
+                Label("stores.manage", systemImage: "slider.horizontal.3")
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Image(systemName: "storefront")
+                if let store = shopVM.selectedStore {
+                    Text(store.name).lineLimit(1)
+                } else {
+                    Text("stores.pick")
+                }
+                Image(systemName: "chevron.down").font(.caption2.weight(.bold))
+            }
+            .font(.subheadline)
+            .foregroundStyle(shopVM.selectedStore == nil ? Color.secondary : accent)
+        }
+    }
+
+    @ViewBuilder
+    var restockStrip: some View {
+        let suggestions = restockSuggestions
+        if !suggestions.isEmpty {
+            RestockStrip(suggestions: suggestions, accentColor: accent) { s in
+                Task {
+                    await listVM.addItem(name: s.name, category: s.category, quantity: nil, unit: nil,
+                                         addedByName: session.displayName)
+                }
+            }
         }
     }
 
@@ -172,20 +272,19 @@ struct HomeView: View {
     var itemList: some View {
         ScrollView {
             LazyVStack(spacing: 0, pinnedViews: .sectionHeaders) {
-                if !unchecked.isEmpty {
-                    Section {
-                        ForEach(unchecked) { item in
-                            ItemRow(item: item, accentColor: accent) {
-                                Task { await listVM.toggleItem(item) }
-                            }
-                            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                                Button(role: .destructive) {
-                                    Task { await listVM.deleteItem(item) }
-                                } label: { Label("item.delete", systemImage: "trash") }
-                            }
+                restockStrip
 
-                            Divider().padding(.leading, 58)
+                if shopVM.selectedStore != nil {
+                    ForEach(Array(aisleSections.enumerated()), id: \.element.category) { index, section in
+                        Section {
+                            rows(section.items)
+                        } header: {
+                            aisleHeader(section.category, step: index + 1, count: section.items.count)
                         }
+                    }
+                } else if !unchecked.isEmpty {
+                    Section {
+                        rows(unchecked)
                     } header: {
                         sectionHeader("home.section.tobuy", count: unchecked.count)
                     }
@@ -193,18 +292,7 @@ struct HomeView: View {
 
                 if !checked.isEmpty {
                     Section {
-                        ForEach(checked) { item in
-                            ItemRow(item: item, accentColor: accent) {
-                                Task { await listVM.toggleItem(item) }
-                            }
-                            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                                Button(role: .destructive) {
-                                    Task { await listVM.deleteItem(item) }
-                                } label: { Label("item.delete", systemImage: "trash") }
-                            }
-
-                            Divider().padding(.leading, 58)
-                        }
+                        rows(checked)
                     } header: {
                         sectionHeader("home.section.incart", count: checked.count)
                     }
@@ -212,6 +300,44 @@ struct HomeView: View {
             }
             .padding(.bottom, 100)
         }
+    }
+
+    func rows(_ items: [ShoppingItem]) -> some View {
+        ForEach(items) { item in
+            ItemRow(item: item, accentColor: accent) {
+                Task { await listVM.toggleItem(item) }
+            }
+            .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                Button(role: .destructive) {
+                    Task { await listVM.deleteItem(item) }
+                } label: { Label("item.delete", systemImage: "trash") }
+            }
+
+            Divider().padding(.leading, 58)
+        }
+    }
+
+    /// Cabeçalho de corredor: número da paragem no percurso + categoria.
+    func aisleHeader(_ category: ItemCategory, step: Int, count: Int) -> some View {
+        HStack(spacing: 8) {
+            Text("\(step)")
+                .font(.caption2.monospacedDigit().weight(.bold))
+                .foregroundStyle(.white)
+                .frame(width: 18, height: 18)
+                .background(accent)
+                .clipShape(Circle())
+            Image(systemName: category.icon).font(.caption)
+            Text(category.localizedKey)
+                .font(.footnote.weight(.semibold))
+            Text("(\(count))")
+                .font(.footnote)
+                .foregroundStyle(.tertiary)
+            Spacer()
+        }
+        .foregroundStyle(.secondary)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 8)
+        .background(Color(.systemGroupedBackground))
     }
 
     func sectionHeader(_ title: LocalizedStringKey, count: Int) -> some View {
